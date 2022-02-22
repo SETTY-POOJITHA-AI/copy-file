@@ -19,10 +19,11 @@ the content in the original file will be copied in the new file.
 end the program. 
 ## PROGRAM:
 ~~~
-with open('text.txt') as fp:
-    with open('copy.txt','w') as fp1:
-        cpy=fp.read()
-        fp1.write(cpy)
+with open("data.txt","r") as f:
+    data=f.read()
+with open("newf.txt","w") as f1:
+    f1.write(data)
+    
 ~~~
 ### OUTPUT:
 ![githublogo](program.jpg)
